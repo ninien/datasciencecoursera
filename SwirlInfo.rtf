@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8860\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 You can exit swirl and return to the R prompt (>) at any time by pressing the Esc key. If you are\
+| already at the prompt, type bye() to exit and save your progress. When you exit properly, you'll see a\
+| short message letting you know you've done so.\
+\
+| When you are at the R prompt (>):\
+| -- Typing skip() allows you to skip the current question.\
+| -- Typing play() lets you experiment with R on your own; swirl will ignore what you do...\
+| -- UNTIL you type nxt() which will regain swirl's attention.\
+| -- Typing bye() causes swirl to exit. Your progress will be saved.\
+| -- Typing main() returns you to swirl's main menu.\
+| -- Typing info() displays these options again.\
+\
+help.start()\
+\
+\
+dealing with data:\
+class(data) -> data.frame\
+dim(data) -> rows, columns\
+nrow(data) -> number of rows\
+ncol(data) -> number of columns\
+object.size(data) -> size of object in memory\
+names(data) -> character vector of column names\
+head(data) -> the top few rows of the data set\
+head(data, 10) -> the top 10 rows of the data set\
+tail(data, 15) -> last 15 rows of the data set\
+summary(data) -> summary of each column (including number of NA values)\
+table(data$nameOfAColumn) -> more detailed summary of that column\
+str(data) -> shows structure of data\
+\
+matrices and data frames:\
+dim(my_matrice)\
+length(my_vector)\
+dim(my_vector) <- c(4,5) : makes it into a matrix with 4 rows and 5 columns\
+attributes(my_vector)\
+class(my_vector)\
+?matrix\
+my_matrix2 <- matrix(1:20, 4, 5)\
+identical(my_matrix, my_matrix2) = TRUE\
+cbind -> combine columns but everything changed to strings\
+my_data <- data.frame(patients, my_matrix) -> patients are row names\'85 how?\
+colnames(my_data) <- cnames (which is a vector of column names)\
+\
+other:\
+rm(list=ls()) <- removes all objects in environment (equivalent to clear all)\
+\
+}
